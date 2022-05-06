@@ -208,6 +208,7 @@ h5 {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
   }
@@ -318,11 +319,6 @@ h5 {
     flex-direction: column;
     text-align: center;
   }
-  .id-photo{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
   .first_row {
     display: flex;
     flex-direction: column;
@@ -340,7 +336,7 @@ h5 {
     width:90%;
     opacity: 85%;
   }*/
-  .url_wild{
+  .url_contact{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -348,7 +344,7 @@ h5 {
 }
 
 @media screen and (min-width: 670px) {
-  .leopold, .xavier, .mario{
+.mario{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -363,7 +359,7 @@ h5 {
     flex-direction: column;
     text-align: center;
   }
-  .url_wild{
+  .url_contact{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -399,13 +395,6 @@ h5 {
   align-items: center;
 }
 
-.id-photo{
-  border-radius: 40%;
-  margin-left: 5%;
-  margin-left: 5%;
-  width: 70%;
-}
-
 .Newsletter{
   display: flex;
   justify-content: space-around;
@@ -432,9 +421,13 @@ h5 {
   opacity: 85%;
 }
 
-.url_wild{
+.url_contact{
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: left;
+}
+
+.background_footer{
+  background-color:lightgray;
 }
