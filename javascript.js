@@ -1,9 +1,10 @@
 function sendForm(){
     var d = new Date();
     alert("HELLO!\nToday " + d.toDateString() + " you will send a formulaire asking for something. We will keep yout contact for further instructions.")
-    //+ "\n" + contact + "\n "+ email + "\n "+ subject +"\n " + message);
-    //window.open('https://mp-c.github.io/WebProjetoEfolioA/contact.html/');
-    window.location.reload(true);
+    window.location("https://mp-c.github.io/WebProjetoEfolioA/home.html");     
+    //window.open("file:///C:/Users/mpcrc/OneDrive/Documents/Eng%20Informatica/UaB/WebProjetoEfolioA/mail.html/", "_self");     
+    //window.location.href('file:///C:/Users/mpcrc/OneDrive/Documents/Eng%20Informatica/UaB/WebProjetoEfolioA/mail.html/');
+    //window.location.reload(true);
 }
 
 function retur(){
