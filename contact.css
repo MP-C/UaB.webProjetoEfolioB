@@ -53,7 +53,6 @@
   float: right;
   padding: 28px 20px;
   position: relative;
-  user-select: none;
 }
 
 .header .menu-icon .navicon {
@@ -192,7 +191,7 @@
   margin-right: auto;
   padding-left: 25px; 
   padding-right: 25px;
-  }
+}
 
 .title_contact{ 
   margin-top: 50px;
@@ -282,6 +281,12 @@
   height : 600px;
   margin-bottom: 15px;
 }
+
+.htmlHide{
+  width: 50%;
+  height: 650 px;
+}
+
 
   /*general for all*/
   @media screen and (min-width: 480px) {

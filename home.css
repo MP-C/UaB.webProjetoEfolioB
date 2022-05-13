@@ -83,8 +83,7 @@
   top: -5px;
 }
 
-/* menu btn */
-
+/* menu btn serve para modificar as consições do menu quando a pagina web se encontra em formato mobile*/
 .header .menu-btn {
   display: none;
 }
@@ -191,7 +190,6 @@ h2 {
   height: 150px;
   width: 50%;
   opacity: 80%;
- 
   width: 60%;
 }
 
@@ -356,6 +354,11 @@ a, .covid_box{
 
 #box_6:hover .info, #box_6:hover .info:before {
   transform: translateY(0) translateZ(0);
+}
+
+.htmlHide{
+  width: 50%;
+  height: 650 px;
 }
 
 

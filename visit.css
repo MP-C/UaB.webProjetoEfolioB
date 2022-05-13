@@ -12,7 +12,6 @@ ul {
 li {
     margin-left: 10px;
     margin-right: 10px;
-    list-style-type: none;
 }
 
 #search {
@@ -37,7 +36,6 @@ ul {
 li {
     margin-left: 10px;
     margin-right: 10px;
-    list-style-type: none;
 }
 
 #search {
@@ -156,13 +154,14 @@ body {
     height: 700PX;
 }
 
-h4 {
+#title_visit {
     font-size: 100px;
+    margin-left: 9%;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-h5 {
+#title_brussels {
     font-size: 100px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: red;
@@ -239,7 +238,6 @@ h5 {
     float: right;
     padding: 28px 20px;
     position: relative;
-    user-select: none;
   }
   
   .header .menu-icon .navicon {
@@ -312,6 +310,10 @@ h5 {
     }
 }
 
+.htmlHide{
+  width: 50%;
+  height: 650 px;
+}
 
 @media screen and (min-width: 480px) {
   .footer{
@@ -373,11 +375,6 @@ h5 {
   justify-content:space-around;
 }
 
-.about_us_title{
-  text-align: center;
-  margin-top: 150px;
-}
-
 .first_row{
   display:flex;
   justify-content: center   ;
@@ -387,21 +384,6 @@ h5 {
   margin-bottom: 85px;
 }
 
-.identification-team{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content:left;
-  align-items: center;
-}
-
-.Newsletter{
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-content: center;
-  margin-top:2.5%;
-}
 .second_row{
   display:flex;
   flex-direction: column;
@@ -419,13 +401,6 @@ h5 {
   min-width: 35%;
   width:50%;
   opacity: 85%;
-}
-
-.url_contact{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: left;
 }
 
 .background_footer{
