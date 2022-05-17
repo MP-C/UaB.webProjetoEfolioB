@@ -38,7 +38,6 @@
 }
 
 /* menu */
-
 .header .menu {
   clear: both;
   max-height: 0;
@@ -46,14 +45,12 @@
 }
 
 /* menu icon */
-
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
-  user-select: none;
 }
 
 .header .menu-icon .navicon {
@@ -358,7 +355,10 @@ a, .covid_box{
 
 .htmlHide{
   width: 75%;
-  white-space: 5px;
+;
+}
+.htmlHome{
+  width: 75%;
 }
 
 

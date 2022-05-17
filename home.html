@@ -102,14 +102,14 @@
   </a>
   <div>
     <button id="hiddeInfoHomeHTML" onclick="htmlShowHome()">Information HTML</button>
-    <div id="htmlHome" style="display: none;">
-      <textarea class="htmlHide">
-      Nesta página "Home" foram usadas as seguintes formas com os respectivos motivos :
+      <div id="htmlHome" style="display: none;">
+        <textarea class="htmlHide">
+      Nesta página "Home.HTML" foram usadas as seguintes formas com os respectivos motivos :
       Para HTML:
-        - a marca <head> foi utilizado para introduzir as características da página HMLT em questão que corresponde às características desta página (meta, link, script e title);
+      - a marca <head> foi utilizado para introduzir as características da página HMLT em questão que corresponde às características desta página (meta, link, script e title);
         - a marca <meta> serve para identificar os elementos relativos à página em concreto, tais como  o tipo de caracteres, a descrição da página, palavras de identificação, autor do documento, e configurações gerais. Permite também identificar que outras páginas e ligações serão chamadas. Como por exemplo o estilo de caracteres: UTF-8;
         - a marca <link> é uma característica abreviada de Hyperlink, que permite aceder a outros documentos, podendo também funcionar como "click", ou como atributo de outro elemento típico de HTML. Serviu para identificar em que página se encontra o CSS correspondente: href="home.html";
-        - a marca script usa se para definir um Script por exemplo, de JavaScript, ou indicar um documento deve ser lido, que contenha declarações necessárias ao funcionamento dessa página. Quando este se faz acompanhar por uma atributo "src", identifica em que documento esta informação deve ser lida. Pode ser usado para realizar mudanças dinâmicas típicas de JavaScript, como imagem, validação de formulários. A maioria destas funcionalidades acabaram por ser implementadas em CSS. Mas estas funcionalidades podem ser executadas em ambos os formatos;
+        - a marca 'script' usa-se para definir um Script por exemplo, de JavaScript, ou indicar um documento deve ser lido, que contenha declarações necessárias ao funcionamento dessa página. Quando este se faz acompanhar por uma atributo "src", identifica em que documento esta informação deve ser lida. Pode ser usado para realizar mudanças dinâmicas típicas de JavaScript, como imagem, validação de formulários. A maioria destas funcionalidades acabaram por ser implementadas em CSS. Mas estas funcionalidades podem ser executadas em ambos os formatos;
         - a marca <title> permite identificar no separador da página em questão, o título que se deseja "Brussels-In";
         - a marca <body> corresponde ao conteúdo central da página .html, onde se usam os elementos relativos ao que deve aparecer no lado do cliente;
         - a marca <section> serve para dividir partes do conteúdo de uma página web, e serve para indicar que o seu conteúdo corresponde a um tema específicos
@@ -121,63 +121,54 @@
         - a marca <ul> representa uma lista de itens sem que estes tenham uma ordem especifica. Apenas permite ordenar um item, sem ter numerário ou posição, isto é, a tag <li>;
         - a marca <li> foi usada para representar item a item (Home, Visit, e Contact). Pode ser usado como ordem, mas foi encontrada esta forma que permite indicar um por um. Para obter a mesma apresentação. poderia ter sido usada outra maneira, tal como estão outros pontos abaixo indicados. Este elemento tem sempre que ser usado dentro de uma lista ou menu. Serviu para testar a funcionalidade; 
         - a marca <h1> representa um nível de seção, para identificação de títulos/ cabeçalhos, em função do nível "InBrussels" logo no inicio em cima da imagem principal;
-        - a marca <p> serviu par aidentificar paragrafos 
-        - a marca <button>
-        - a marca <textarea>
-        - a marca <footer>
-        - a marca <br>
-        - a marca <img>
-        - a marca <i>
-        - a marca <>
-        - a marca <>
-      
-      Para CSS:
-        - display
-        - justify-content
-        - background-color
-        - box-shadow
-        - Width
-        - height
-        - margin
-        - padding
-        - list-style
-        - overflow
-        - background-color
-        - border
-        - text-decoration
-        - font-size
-        - font-family
-        - Color
-        - float
-        - clear
-        - Max
-        - Min 
-        - Transition
-        - Cursor
-        - Position
-        - z-index 
-        - user-select
-        - Content
-        - Top
-        - Transform
-        - @media
-        - Flex-direction
-        - Align-items
-        - webkit-background-size
-        - background-size: cover
-        - opacity: 
-        - Text-align
-        - Border-radius
-        - Filter
-        - .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .navicon:after
-        - line-height
-        - list-style:
-        - flex-flow
-        - --left
-        - --right
-        - --top
-      --bottom
-    </textarea>
+        - a marca <p> serviu para identificar parágrafos 
+        - a marca <button> define um botão "clicavel" que foi usado para esconder a informação relativa às tags HTML, contida neste site, associado a uma função JavaScript para alterar o estilo
+        - a marca <textarea> representa a zona de texto de múltiplas linhas que foi usada para colocar esta informação toda
+        - a marca <footer> define a zona que contém a informação de sites, e ícones em rodapé
+        - a marca <br> serve para inserir uma quebra de linha vazia (break) em texto, frases ou formulários. Aqui fora usada relativamente ao "alignItems" do footer, para separar um pouco mais os ícones sociais uns dos outros, depois de ter sido usado um flex-content com display horizontal
+        - a marca <img> serviu para introduzir as várias imagens que esta página contém
+
+        Para CSS:
+        - align-items é uma propriedade que serviu para alinhar vários itens, tais como os ícones de rodapé, a zona de contactos, a posição de Covid Safety.
+        - background-color permite identificar o fundo de uma zona, que inclui o padding e border (isto é, vai até às arestas do próprio elemento), e neste caso se alterar a cor deste fundo, tal como outras propriedades, algumas caracteristicas podem ser adicionadas (cover, size, height). Usada em várias imagens e fundos de cada setor ou zonas.
+        - border-radius, forma de definir os cantos de vários elementos, e neste caso das imagens centrais usadas. 
+        - box-shadow, usado para adicionar um efeito sombra, tanto nos links das páginas superiores, como nas imagens, assim que o texto aparece ao se clicar em cima. 
+        - clear, serviu para aplicar um reformatar da zona em questão, tal como a zona do header, assim que se passa o rato. Tem também efeito no "responsive".
+        - color, permite atribuir cores, tal como usado nos fundos, nas letras, entre outros.
+        - content, refere-se a uma propriedade que pode ser usada com múltiplas funcionalidades quando associada a outros pseudo-elementos. Para alinhar conteúdo, zonas, imagens, estruturas entre outros. Também é um recurso importante para adaptar ao modo mobile ("responsive")
+        - cursor, é uma propriedade que permite que se faça uso das propriedades do cursor do rato. Isto é, assim que este navega numa janela e passa "por cima" de uma estrutura, texto ou caixa, e aqui foi usado nas próprias imagens centrais;
+        - display, define, no tipo de caixa, se ou como, um conteúdo ou elemento pode aparecer. Propriedade que pode ser usada até para colocar elementos na horizontal, ordenados e com espaços entre estes. Tal como nos ícones de rodapé, nas imagens, no modo "responsive", e em posições.
+        - filter, usado para dar contraste nas imagens usadas, assim que o "cover" e "cursor" atuam, nas imagens, ativadas junto do texto que lhe aparece por cima. Inicialmente pensado para ser usado nesta página com JavaScript, mas explorou-se para CSS. 
+        - flex-direction, serve para dar uma direção ao contudo correspondente à sua classe.
+        - flex-flow, um género de layout que permite dar sentido ao conteudo independente da direção que este tem, ou então condensar em espaços, tal como usado nesta pagina para todo o footer, e assim, centrar todo este numa coluna só.
+        - float, permite que certos elementos troquem de posição, neste caso, foi utilizado em modo "responsive", e para que o logotipo tive sempre a mesma posição.
+        - font-family, determina o tipo de letra.
+        - font-size, determina o tamanho de letra.
+        - height, determina a altura de algum conteúdo, ou o espaço que um elemento pode ocupar. Tal como as imagens, ou o fundo ou até de um espaço vazio.
+        - justify-content, permite definir como se distribui o espaço de uma zona. Entre imagens foi o caso.
+        - list-style, como os itens da barra superior (Home, Visit…) foram usados com função <li>, esta propriedade com a característica "none", permite que as bolas dos itens listados desapareçam.
+        - line-height, propriedade que define a linha miníma usada em torno de qualquer conteúdo.
+        - margin, define as margens. Neste caso permitiu centrar o tamaho das imagens e icons, ao espaço que estes ocupam. Para não passarem as bordas desejadas.
+        - max, representa um máximo possível que se queira limitar, e foi usado no modo "responsive"
+        - checked~:before,:after, são características que permitem definir novas dimensões ou acontecimentos, como por exemplo uma check box pré selecionada, ou alteração de imagem que dá a sensação de movimento, e até uma adaptabilidade para diferentes tamanhos de écrans.
+        - min, representa um mínimo possível que se queira limitar, e foi usado no modo "responsive"
+        - opacity, define a transparência de uma imagem, por exemplo. Tal como foi o caso, para dar um ar mais "esbatido"/ esbranquiçado.
+        - padding refere-se ao espaço em torno de um conteúdo (imagem ou texto) que está no interior da borda, e permite que este seja alterado, para criar espaços em torno deste.
+        - position, permite determinar o lugar em precisão que um conteúdo ficaria. Esta característica foi usada para adaptar o site, a um ecrã mais pequeno, e fixar ícones, botões e imagens.
+        - overflow, permite que se especifique quando o seu conteúdo deve ou não ser cortado. Este, permite que o texto das imagens, ao aparecer, fique limitado ao se sobrepor e esconder na imagem onde está referenciado
+        - text-align, alinha o texto, que foi escrito no centro de cada nova janela que aparece;
+        - text-decoration, neste caso, recorreu-se a esta funcionalidade para retirar adornos nos textos usados. Como quando se clica uma vez por exemplo, e este texto fica em roxo.
+        - transform, permitiu transformar o menu, em algo mais dinâmico, e estético num formato mais pequeno. Neste caso, só foi possivel, graças ao botão check usado.
+        - transition, permite que as transições de um elemento, seja ele qual for, seja feito de modo sequencial e não repentina. Podendo o tempo ser manipulado.
+        - webkit-background-size, propriedade que permitiu fixar a imagem de fundo principal, e que os restantes elementos deslizassem por cima.
+        - width, determina a largura de algum conteúdo, ou o espaço que um elemento pode ocupar. Tal como as imagens, ou o fundo ou até ser espaço vazio.
+        - z-index, ao contrario do float, que faz adaptar os elementos numa pagina e voltar a apresenta-los noutro lugar, esta propriedade, permite que um elemento se desloque em profundidade. Tal como as imagens usadas, que se "para traz" do texto que é apresentado. Este texto na realidade está no eixo z (quando visto em três dimensões), e a imagem é que está mais para trás.
+        - @media, permite alterar as dimensões de estruturas, e elementos numa pagina, de acordo com os tamanhos máximos e mínimos pré-definidos
+        - --left, refere-se ao lado esquerdo de um elemento.
+        - --right, refere-se ao lado direito de um elemento.
+        - --top, refere-se ao topo de um elemento.
+        - --bottom, refere-se à parte inferior de um elemento.
+      </textarea>
     </div>
 
 </div>
@@ -213,7 +204,7 @@
 
             <div class="url_contact">
               <div>
-                <p>Projecto do estudante Mário Carvalho, realizado no âmbito da disciplina de Laboratório de
+                <p>Projeto do estudante Mário Carvalho, realizado no âmbito da disciplina de Laboratório de
                     Sistemas e Serviços Web
                     <a href="https://elearning.uab.pt/course/view.php?id=14136" target="_blank"> da Universidade
                         Aberta &copy; de Lisboa

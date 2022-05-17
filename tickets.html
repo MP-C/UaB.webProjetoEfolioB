@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="mail.css">
+    <link rel="stylesheet" href="tickets.css">
     <script src="javascript.js"></script>
-    <title>Brussels - EMail</title>
+    <title>Brussels - Visit</title>
 </head>
 
 <body>
@@ -25,52 +25,63 @@
             </ul>
         </header>
     </section>
-
-    <div class="contact_image_title">
-        <div class="contact_us_title">
-            <h1 id="contact">Thank </h1> <br>
-            <p>  </p>
-            <h1 id="us"> You !</h1>
+    <div class="spacebox">
+        <div class="bigbox">
+            <div class="hauteur">
+                <h1 id="title_Tic">Tic</h1>
+                <h1 id="title_ket">ket</h1>
+            </div>
         </div>
     </div>
 
-    <section>
-        <div class="contact_us_groupe" id="contact_us" name="contact_us">
-            <h2 class="title_contact" id="contact-us"> We will be happy to talk about anything <br><br> </h2>
+    <div class="mainbox">
+        <img class="mainboxImage" src="images/cinquentenaire.jpg" alt="">
+        <div class="boxTickets">
+            <h1>By tickets for: </h1>
+            <div class="boxTicketsQuantity">
+                <p> Quantity: </p>
+                <input class="subjectQuantity" type="text" id="quantity" placeholder="1, 2,..."><br><br>
+            </div>
+            <div class="boxTicketsQuantity">
+                <p> Museum: </p>
+                <select class="subjectMuseum" name="subject" id="subject">
+                    <option value="Atomium">Atomium</option>
+                    <option value="Comics Art Museum ">Comics Art Museum </option>
+                    <option value="Expo">Expo</option> <br>
+                    <option value="Royal Military Museum">Royal Military Museum</option>
+                    <option value="Royal Palace of Brussels">Royal Palace of Brussels</option> <br>
+                </select><br><br>
+            </div>
+            <a href="mail.html">
+                <button class="buttoninfo" type="submit" onclick="sendForm()" value="Send">Send</button>
+            </a>
+        </div>
+    </div>
+    <div class="bottons-container">
+        <div class="bottonsJs">
             <div>
-                <p>We will get in contact with you as soon as possible.</p> 
-                <p>Thank you for your contact.</p> 
-                <p>See you soon.</p> 
-                <p>Thank you</p> 
-            </div>
-            <div class="bottons-container">
-                <div class="bottonsJs">
-                    <div>
-                        <button class="buttoninfo" onclick="retur()">Return</button>
-                    </div>
-                </div>
+                <button class="buttoninfo" onclick="retur()">Return</button>
             </div>
         </div>
-    </section>
     <div>
-        <button id="hiddeInfoMailHTML" onclick="htmlShowMail()">Information HTML</button>
-        <div id="htmlMail" style="display: none;">
-            <p>Nesta página "Mail.HTML" não foi usada mais nenhuma propriedade além das que foram usadas anteriormente.</p>
+        <button id="hiddeInfoVisitHTML" onclick="htmlShowVisit()">Information HTML</button>
+        <div id="htmlVisit" style="display: none;">
+            <p>Nesta página "Visit.HTML" não foi usada mais nenhuma propriedade além das que foram usadas anteriormente.
+            </p>
         </div>
     </div>
-    <!--for all pages-->
     <section>
         <footer>
-            <div class="second_row">
+            <div class=second_row>
                 <div class="Social-Network-Icons">
                     <a href="https://www.facebook.com/">
                         <ul><img src="icons/Facebook.jpg" class="Social-Network-Icons" name="Facebook"
-                        alt="icon-Facebook">
+                                alt="icon-Facebook">
                         </ul><br>
                     </a>
                     <a href="https://www.instagram.com/">
                         <ul><img src="icons/Instagram.jpg" class="Social-Network-Icons" name="Instagram"
-                        alt="icon-Instagram">
+                                alt="icon-Instagram">
                         </ul><br>
                     </a>
                     <a href="https://twitter.com/">
@@ -83,16 +94,20 @@
                     </a>
                     <a href="https://web.whatsapp.com/">
                         <ul><img src="icons/Whatsapp.jpg" class="Social-Network-Icons" name="Whatsapp"
-                        alt="icon-Whastapp">
+                                alt="icon-Whastapp">
                         </ul><br>
                     </a>
                 </div>
-
+            </div>
+            </div>
+            <div class="background_footer">
                 <div class="url_contact">
-                    <p>Projeto do estudante Mário Carvalho, realizado no âmbito da disciplina de Laboratório de
-                        Sistemas e Serviços Web
+                    <p>Projeto do estudante Mário Carvalho, realizado no âmbito da disciplina de Laboratório de Sistemas
+                        e
+                        Serviços Web
                         <a href="https://elearning.uab.pt/course/view.php?id=14136" target="_blank"> da Universidade
-                            Aberta &copy; de Lisboa
+                            Aberta
+                            &copy; de Lisboa
                         </a>
                         <i class="far fa-copyright"></i> 2022
                     </p>
@@ -100,5 +115,8 @@
             </div>
         </footer>
     </section>
+
+    <script src="visit.js"></script>
 </body>
+
 </html>
