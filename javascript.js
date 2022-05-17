@@ -18,6 +18,15 @@ function htmlShowVisit(){
     }
 }
 
+function htmlShowTickets(){
+    var x = document.getElementById("htmlTickets");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
 function htmlShowContact(){
     var x = document.getElementById("htmlContact");
     if (x.style.display === "none") {
