@@ -62,8 +62,7 @@ function retur(){
 
 /*Para reenviar para o link do repositório */
 function reposLink(){
-    window.location.assign("https://github.com/MP-C/WebProjetoEfolioA");
-    //window.location.assign("https://github.com/MP-C/WebProjetoEfolioB/releases/tag/v1.0");
+    window.location.assign("https://github.com/MP-C/WebProjetoEfolioB/releases/tag/v1.0");
 }
 
 /*para fazer download do projeto caso necesario */
@@ -74,7 +73,7 @@ function DownloadWebFiles() {
     a.setAttribute("download", fileName);
     a.click();
     }
-    download("https://drive.google.com/drive/folders/1bWDt6dVxIbo3o1qKUN2Gc7TCcL6CdagH?usp=sharing", "EFolioB_MarioCarvalho_web");
+    download("https://github.com/MP-C/WebProjetoEfoliob", "EFolioB_MarioCarvalho_web");
 }
 
 /*Função quer permite activar a localização, que é uma funcionalidade, mas fica a faltar por enquanto integrar com o mapa */
