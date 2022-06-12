@@ -50,9 +50,6 @@ function sendForm(){
     var d = new Date();
     alert("HELLO!\nToday " + d.toDateString() + " you will send a formulaire asking for something. We will keep yout contact for further instructions.")
     window.location("https://mp-c.github.io/WebProjetoEfolioA/home.html");     
-    //window.open("file:///C:/Users/mpcrc/OneDrive/Documents/Eng%20Informatica/UaB/WebProjetoEfolioA/mail.html/", "_self");     
-    //window.location.href('file:///C:/Users/mpcrc/OneDrive/Documents/Eng%20Informatica/UaB/WebProjetoEfolioA/mail.html/');
-    //window.location.reload(true);
 }
 
 /* para voltar à pagina anterior */
@@ -73,7 +70,7 @@ function DownloadWebFiles() {
     a.setAttribute("download", fileName);
     a.click();
     }
-    download("https://github.com/MP-C/WebProjetoEfoliob", "EFolioB_MarioCarvalho_web");
+    download("https://github.com/MP-C/WebProjetoEfolioB/releases/tag/v2.0", "EFolioB_MarioCarvalho_web");
 }
 
 /*Função quer permite activar a localização, que é uma funcionalidade, mas fica a faltar por enquanto integrar com o mapa */
